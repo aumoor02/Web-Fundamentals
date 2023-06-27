@@ -1,0 +1,38 @@
+* {
+
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/*    background-color: rgb(177, 52, 52); */
+    background-color: rgb(161, 75, 75);  
+}
+
+header {
+    border: groove;
+}
+
+footer {
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+.navbar-custom {
+}
+
+#about {
+    background-color: rgb(161, 75, 75);
+    padding: 75px;
+    border: groove;
+}
+
+#portfolio {
+    background-color: rgb(161, 75, 75);
+    padding: 75px;
+    border: groove;
+}
+
+
+div.col a {
+    padding: 20px;
+}
