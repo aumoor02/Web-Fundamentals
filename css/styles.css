@@ -1,7 +1,3 @@
-* {
-
-}
-
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 /*    background-color: rgb(177, 52, 52); */
@@ -17,7 +13,8 @@ footer {
     padding: 20px;
 }
 
-.navbar-custom {
+.fs-4 a {
+    color: white;
 }
 
 #about {
