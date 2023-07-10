@@ -4,13 +4,39 @@
   "description": "Web Fundamentals Portfolio Project",
   "main": "index.html",
   "scripts": {
+    "babel": "babel js/* -d js",
+    "build": "npm run clean && npm run copyjs && npm run babel && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "copyjs": "copyfiles -f node_modules/bootstrap/dist/js/bootstrap.bundle.js js",
+    "imagemin": "imagemin img/* -o dist/img",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server",
-    "start": "npm run lite"
+    "scss": "node-sass -o css/ css/",
+    "start": "npm run lite",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Austin Moore",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "@babel/cli": "^7.22.6",
+    "@babel/core": "^7.22.8",
+    "@babel/preset-env": "^7.22.7",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.6.1",
+    "node-sass": "^8.0.0",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.63.6",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0"
   }
 }
