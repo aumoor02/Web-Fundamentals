@@ -6,6 +6,7 @@ body {
 
 header {
     border: groove;
+    padding: 75px 20px 50px;
 }
 
 footer {
@@ -13,19 +14,24 @@ footer {
     padding: 20px;
 }
 
+
 .fs-4 a {
     color: white;
 }
 
 #about {
     background-color: rgb(161, 75, 75);
-    padding: 75px;
+    padding: 75px 20px;
     border: groove;
+}
+
+#contact {
+    padding-top: 40px;
 }
 
 #portfolio {
     background-color: rgb(161, 75, 75);
-    padding: 75px;
+    padding: 75px 20px;
     border: groove;
 }
 
